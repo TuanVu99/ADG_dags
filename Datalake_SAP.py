@@ -136,7 +136,7 @@ def update_staging_fagll03_131():
         FROM 
             staging.fagll03_131 
         where 
-            first_day_of_month = {start_date.strftime('%Y-%m-%d')} and company != customer
+            first_day_of_month = '{start_date.strftime('%Y-%m-%d')}' and company != customer
     """)}}
     data_now={}
     for row in get_data(
