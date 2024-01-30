@@ -130,7 +130,7 @@ def update_staging_fagll03_131():
     start_date, end_date = (datetime.now() - timedelta(days=20)).replace(day=1, hour=0, minute=0, second=0, microsecond=0), datetime.now()
     # start_date = datetime(2021,12,1)
     key_func = lambda arr: ";".join([str(v) for v in arr])
-    data_raw = {start_date.strftime('%Y-%m-%d'):{key_func(row[1:4]): dict(zip(columns, row)) for row in get_data(f"""
+    data_raw = {start_date.strftime('%Y-%m-%d'):{key_func(row[1:4]): dict(zip(columns, row[1:])) for row in get_data(f"""
         SELECT 
             first_day_of_month, company, customer, gl_account, dau_ky_no, dau_ky_co, phat_sinh_no, phat_sinh_co, cuoi_ky_no, cuoi_ky_co
         FROM 
@@ -159,7 +159,7 @@ def update_staging_fagll03_131():
         if key not in data_now:
             data_now[key] = {}
         key2 = key_func(row[1:4])
-        data_now[key][key2] = row
+        data_now[key][key2] = row[1:]
     
     while start_date < end_date:
         next_date, key, key_next = (start_date+timedelta(days=32)).replace(day=1), start_date.strftime('%Y-%m-%d'), (start_date+timedelta(days=32)).replace(day=1).strftime('%Y-%m-%d')
