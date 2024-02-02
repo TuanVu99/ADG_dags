@@ -159,7 +159,7 @@ def update_staging_fagll03_131():
         if key not in data_now:
             data_now[key] = {}
         key2 = key_func(row[1:4])
-        data_now[key][key2] = row
+        data_now[key][key2] = row[1:]
     
     while start_date < end_date:
         next_date, key, key_next = (start_date+timedelta(days=32)).replace(day=1), start_date.strftime('%Y-%m-%d'), (start_date+timedelta(days=32)).replace(day=1).strftime('%Y-%m-%d')
