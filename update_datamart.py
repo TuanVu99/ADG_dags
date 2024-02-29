@@ -18,7 +18,7 @@ dag = DAG(
     'Update_Datamart',
     default_args=default_args,
     description='Update_Datamart',
-    schedule_interval="30 0/1 * * *",
+    schedule_interval="0 */2 * * *",
 )
 
 def update_bill_datamart():
