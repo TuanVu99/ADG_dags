@@ -62,7 +62,7 @@ def update_chi_tieu(file, code, kenh, dong_sp):
         table, schema = 'chi_tieu_doanh_so_quan_ly_khu_vuc', 'reporting'
         tmp_kenh = f""" and "Kênh" = '{kenh}'"""
         tmp_dong_sp = f""" and "Ngành" = '{dong_sp}'"""
-        fast_insert(data, table, schema, columns, sql_pre_insert=f"""DELETE FROM {schema}.{table} WHERE "Com.Code" = '{code}' {tmp_dong_sp if dong_sp else ''} {tmp_kenh if kenh else ''} and EXTRACT('Year' FROM "Kỳ") = '2024' """)
+        fast_insert(data, table, schema, columns, sql_pre_insert=f"""DELETE FROM {schema}.{table} WHERE "Com.Code" = '{code}' {tmp_dong_sp if dong_sp else ''} {tmp_kenh if kenh else ''} and EXTRACT('Year' FROM "Kỳ") in ('2024','2023') """)
         update_last_update(file, time)
 
 def update_cmd(file, bu, kenh, dong_sp):
