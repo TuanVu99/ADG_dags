@@ -20,7 +20,7 @@ dag = DAG(
     'Update_data_PMH',
     default_args=default_args,
     description='Update_data_PMH',
-    schedule_interval="0 0,7 * * *",
+    schedule_interval="0 */1 * * *",
 )
 def update_bill(table = 'bill_sap', schema='data_lake', host = 'http://erp.austdoorgroup.vn:8000', debug = False, headers={
     'Authorization': 'Basic UE1IOkFERzEyMzQ1Ng=='
