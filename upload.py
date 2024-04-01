@@ -53,7 +53,7 @@ def update_chi_tieu(file, code, kenh, dong_sp):
         df = pd.read_excel(file,sheet_name=sheet_name)
         df = pd.read_excel(file,sheet_name=sheet_name, converters={n(df, i): str for i in (0,2,3)})
         data = []
-        columns = list(range(14))
+        columns = list(range(20))
         for row in df.iterrows():
             row = list(row[1])
             if pd.isnull(row[0]):
