@@ -54,8 +54,9 @@ def update_chi_tieu(file, code, kenh, dong_sp):
         df = pd.read_excel(file,sheet_name=sheet_name, converters={n(df, i): str for i in (0,2,3)})
         data = []
         columns = list(range(14))
-        if file == '/opt/shared/BU1/KA/BU1_KA_2023.xlsx' or file == '/opt/shared/BU2/KA/BU2_KA_2023.xlsx':
-            columns =list(range(20))
+        # if file == '/opt/shared/BU1/KA/BU1_KA_2023.xlsx' or file == '/opt/shared/BU2/KA/BU2_KA_2023.xlsx':
+        #     columns =list(range(20))
+
         for row in df.iterrows():
             row = list(row[1])
             if pd.isnull(row[0]):
