@@ -53,7 +53,7 @@ def update_chi_tieu(file, code, kenh, dong_sp):
         df = pd.read_excel(file,sheet_name=sheet_name)
         df = pd.read_excel(file,sheet_name=sheet_name, converters={n(df, i): str for i in (0,2,3)})
         data = []
-        if file in ['/opt/shared/BU1/KA/BU1_KA_2023.xlsx' , '/opt/shared/BU2/KA/BU2_KA_2023.xlsx']:
+        if file == '/opt/shared/BU1/KA/BU1_KA_2023.xlsx' or file == '/opt/shared/BU2/KA/BU2_KA_2023.xlsx':
             columns =list(range(20))
         else:
             columns = list(range(14))
