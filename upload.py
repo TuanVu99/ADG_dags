@@ -56,7 +56,7 @@ def update_chi_tieu(file, code, kenh, dong_sp):
         if file in ['/opt/shared/BU1/KA/BU1_KA_2023.xlsx' , '/opt/shared/BU2/KA/BU2_KA_2023.xlsx']:
             columns =list(range(20))
         else:
-            columns = list(range(14))
+            columns = list(range(15))
             print(file)
         for row in df.iterrows():
             row = list(row[1])
