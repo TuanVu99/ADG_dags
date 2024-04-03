@@ -91,7 +91,8 @@ def update_cmd(file, bu, kenh, dong_sp):
         update_last_update(file, time)
 
 def update_chi_tieu_BU1_DL_CC():
-    file = '/opt/shared/BU1/DL_CC/BU1_CC-ĐL_2023.xlsx'
+    # file = '/opt/shared/BU1/DL_CC/BU1_CC-ĐL_2023.xlsx'
+    file = '/opt/shared/BU2/DL_CC/BU2_CC-ĐL_2023.xlsx'
     update_chi_tieu(file, '1100', '01', '01')
 
 def update_CMD_BU1_DL_CC():
