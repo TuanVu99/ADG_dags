@@ -57,7 +57,7 @@ def update_chi_tieu(file, code, kenh, dong_sp):
             columns =list(range(20))
         else:
             columns = list(range(14))
-            print('hahahhahaha')
+            print('hahhahaha')
         for row in df.iterrows():
             row = list(row[1])
             if pd.isnull(row[0]):
@@ -92,7 +92,8 @@ def update_cmd(file, bu, kenh, dong_sp):
         update_last_update(file, time)
 
 def update_chi_tieu_BU1_DL_CC():
-    file = '/opt/shared/BU1/DL_CC/BU1_CC-ĐL_2023.xlsx'
+    # file = '/opt/shared/BU1/DL_CC/BU1_CC-ĐL_2023.xlsx'
+    file = '/opt/shared/BU2/DL_CC/BU2_CC-ĐL_2023.xlsx'
     update_chi_tieu(file, '1100', '01', '01')
 
 def update_CMD_BU1_DL_CC():
