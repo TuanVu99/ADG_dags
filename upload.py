@@ -91,7 +91,7 @@ def update_cmd(file, bu, kenh, dong_sp):
         update_last_update(file, time)
 
 def update_chi_tieu_BU1_DL_CC():
-    file = '/opt/shared/BU1/DL_CC/BU1_CC-ĐL_2023.xlsx'
+    file = '/opt/shared/BU1/DL_CC/BU1_ĐLCC_KPI.xlsx'
     update_chi_tieu(file, '1100', '01', '01')
 
 def update_CMD_BU1_DL_CC():
@@ -99,7 +99,7 @@ def update_CMD_BU1_DL_CC():
     update_cmd(file, 'BU1', '01', '01')
 
 def update_chi_tieu_BU1_DL_NH():
-    file = '/opt/shared/BU1/DL_NH/BU1_NH-ĐL_2023.xlsx'
+    file = '/opt/shared/BU1/DL_NH/BU1_ĐLNH_KPI.xlsx'
     update_chi_tieu(file, '1100', '01', '02')
 
 def update_CMD_BU1_DL_NH():
@@ -107,7 +107,7 @@ def update_CMD_BU1_DL_NH():
     update_cmd(file, 'BU1', '01', '02')
 
 def update_chi_tieu_BU1_KA():
-    file = '/opt/shared/BU1/KA/BU1_KA_2023.xlsx'
+    file = '/opt/shared/BU1/KA/BU1_KA_KPI.xlsx'
     update_chi_tieu(file, '1100', '02', None)
 
 def update_CMD_BU1_KA():
@@ -115,7 +115,7 @@ def update_CMD_BU1_KA():
     update_cmd(file, 'BU1', '02', None)
 
 def update_chi_tieu_BU2_DL_CC():
-    file = '/opt/shared/BU2/DL_CC/BU2_CC-ĐL_2023.xlsx'
+    file = '/opt/shared/BU2/DL_CC/BU2_ĐLCC_KPI.xlsx'
     update_chi_tieu(file, '1000', '01', '01')
 
 def update_CMD_BU2_DL_CC():
@@ -123,7 +123,7 @@ def update_CMD_BU2_DL_CC():
     update_cmd(file, 'BU2', '01', '01')
 
 def update_chi_tieu_BU2_DL_NH():
-    file = '/opt/shared/BU2/DL_NH/BU2_NH-ĐL_2023.xlsx'
+    file = '/opt/shared/BU2/DL_NH/BU2_ĐLNH.xlsx'
     update_chi_tieu(file, '1000', '01', '02')
 
 def update_CMD_BU2_DL_NH():
@@ -131,7 +131,7 @@ def update_CMD_BU2_DL_NH():
     update_cmd(file, 'BU2', '01', '02')
 
 def update_chi_tieu_BU2_Eratek():
-    file = '/opt/shared/BU2/Eratek/BU2_Eratek-ĐL_2023.xlsx'
+    file = '/opt/shared/BU2/Eratek/BU2_Eratek-KPI.xlsx'
     update_chi_tieu(file, '1000', '01', '09')
 
 def update_CMD_BU2_Eratek():
@@ -139,7 +139,7 @@ def update_CMD_BU2_Eratek():
     update_cmd(file, 'BU2', '01', '09')
 
 def update_chi_tieu_BU2_KA():
-    file = '/opt/shared/BU2/KA/BU2_KA_2023.xlsx'
+    file = '/opt/shared/BU2/KA/BU2_KA_KPI.xlsx'
     update_chi_tieu(file, '1000', '02', None)
 
 def update_CMD_BU2_KA():
@@ -151,7 +151,7 @@ def update_CMD_BU2_PKK():
     update_cmd(file, 'BU2', '01', '06')
 
 def update_chi_tieu_BU2_XK():
-    file = '/opt/shared/BU2/XK/BU2_KDQT_2023.xlsx'
+    file = '/opt/shared/BU2/XK/BU2_KDQT_KPI.xlsx'
     update_chi_tieu(file, '1000', '04', None)
 
 def update_CMD_BU2_XK():
