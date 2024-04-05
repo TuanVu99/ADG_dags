@@ -123,7 +123,7 @@ def update_CMD_BU2_DL_CC():
     update_cmd(file, 'BU2', '01', '01')
 
 def update_chi_tieu_BU2_DL_NH():
-    file = '/opt/shared/BU2/DL_NH/BU2_ĐLNH.xlsx'
+    file = '/opt/shared/BU2/DL_NH/BU2_ĐLNH_KPI.xlsx'
     update_chi_tieu(file, '1000', '01', '02')
 
 def update_CMD_BU2_DL_NH():
@@ -131,7 +131,7 @@ def update_CMD_BU2_DL_NH():
     update_cmd(file, 'BU2', '01', '02')
 
 def update_chi_tieu_BU2_Eratek():
-    file = '/opt/shared/BU2/Eratek/BU2_Eratek-KPI.xlsx'
+    file = '/opt/shared/BU2/Eratek/BU2_Eratek_KPI.xlsx'
     update_chi_tieu(file, '1000', '01', '09')
 
 def update_CMD_BU2_Eratek():
