@@ -96,7 +96,7 @@ def update_bill_datamart():
             b.tong_tien_chua_ck * COALESCE(b.ty_gia,1),
             b.tong_chiet_khau,
             b.vat_amount,
-            b.tong_tien_thanh_toan * COALESCE(b.ty_gia,1),
+            b.tong_tien_thanh_toan,
             b.hmtd,
             b.mst,
             b.payment_term,
