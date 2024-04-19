@@ -39,7 +39,7 @@ def update_bill_datamart():
             end as so_luong,
             b.unit_price::double precision * COALESCE(b.ty_gia,1) as don_gia,
              case when 
-               b.currency ='USD' then  b.tong_tien_chua_ck * COALESCE(b.ty_gia*1000,1),
+               b.currency ='USD' then  b.tong_tien_chua_ck * COALESCE(b.ty_gia*1000,1)
             else 
                 b.tong_tien_chua_ck * COALESCE(b.ty_gia,1)
             end,
